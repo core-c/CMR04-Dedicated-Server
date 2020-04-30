@@ -1,0 +1,14 @@
+rm cmr04ds.old
+mv cmr04ds cmr04ds.old
+#gcc -w -o cmr04ds cmr04ds.0.9.c -I/usr/src/mysql-3.23.54a/include -L/usr/src/mysql-3.23.54a/libmysql -lmysqlclient 
+#gcc -w -o cmr04ds cmr04ds.0.9.c -I/usr/src/mysql-max-5.0.13-rc-linux-i686-glibc23/include -L/usr/src/mysql-max-5.0.13-rc-linux-i686-glibc23/libmysql -lmysqlclient #gcc -w -o cmr04ds cmr04ds.0.9.c -I/opt/lampp/include/mysql -L/opt/lampp/lib/mysql -lmysqlclient
+/usr/bin/gcc -w -o cmr04ds cmr04ds.0.9.c -I/opt/lampp/include/mysql -L/opt/lampp/lib/mysql -lmysqlclient -lcurses
+#./cmr04ds "UJE Linux I" 30000
+
+# gcc –o outputfile.cgi  C-code.c –I/db45/mysql/include –L/db45/mysql/lib –lmysqlclient –lsocket –lm –lnsl 
+# gcc -w -o cmr4ds cmr04ds.0.9.c –I/usr/include/mysql –L/usr/include/mysql/libmysql –lmysqlclient –lsocket –lm –lnsl 
+# CFLAGS="-O3" CXX=gcc CXXFLAGS="-O3 -felide-constructors -fno-exceptions \
+#       -fno-rtti" ./configure --prefix=/usr/local/mysql --enable-assembler \
+#       --with-mysqld-ldflags=-all-static
+
+
